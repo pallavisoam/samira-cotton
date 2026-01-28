@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+/* Full-width Sticky Glassmorphism Header */
+.header-parent-div {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 70px;
+    /* background: rgba(255, 255, 255, 0.6); neutral translucent background */
+    background: #cbdceb30;
+    backdrop-filter: blur(10px); /* blurry glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* subtle bottom border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* soft shadow */
+    z-index: 1000; /* stays on top */ 
+}
+
+/* Logo */
+.logo_header {
+    width:90px;
+    /* height: 150px; */
+    transition: transform 0.3s ease;
+}
+
+.logo_header span{
+    font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: #14C9CB;
+}
+
+.logo_header:hover {
+    transform: scale(1.1);
+}
+
+/* Menu Items */
+.header-parent-div div.d-flex.align-items-center.gap-4 p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.header-parent-div div.d-flex.align-items-center.gap-4 p::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #333; /* underline matches text */
+    transition: width 0.3s ease;
+}
+
+.header-parent-div div.d-flex.align-items-center.gap-4 p:hover {
+    color: #000;
+}
+
+.header-parent-div div.d-flex.align-items-center.gap-4 p:hover::after {
+    width: 100%;
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 768px) {
+    .header-parent-div {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .header-parent-div div.d-flex.align-items-center.gap-4 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.company-name{
+    font-weight: 800 !important;
+}
