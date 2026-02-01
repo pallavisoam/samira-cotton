@@ -7,7 +7,7 @@ const Testimonials = () => {
     const displayedTestimonials = testimonials.slice(0, 3);
 
     return (
-        <section className="py-5 px-5 testimonial-container">
+        <section className="py-5 px-5 testimonial-container" id='testimonial'>
             {/* Header */}
             <div className="text-center mb-4">
                 <h2 className="fw-bold testi-header heading-dark">What Our Clients Say</h2>

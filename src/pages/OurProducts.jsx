@@ -1,9 +1,10 @@
 import React from 'react'
+import CatalogPage from '../components/catalogue/productCatalogue'
 
 const OurProducts = () => {
     return (
         <React.Fragment>
-          this is product page
+         <CatalogPage />
         </React.Fragment>
     )
 }

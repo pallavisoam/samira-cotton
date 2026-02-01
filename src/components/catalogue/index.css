@@ -1,0 +1,94 @@
+PAGE
+.catalog-page {
+  background: #f8f9fb;
+  padding: 40px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.sidebar-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.sidebar-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  margin-bottom: 12px;
+}
+
+.sidebar-item {
+  border: none;
+  padding: 12px 14px;
+  font-weight: 500;
+  color: #333;
+  background: transparent;
+  text-align: left;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background: #f1f4ff;
+}
+
+.sidebar-item.active {
+  background: #1581BF !important;
+  color: #fff;
+}
+
+/* CONTENT */
+.content-area {
+  padding-left: 24px;
+}
+
+/* SUBCATEGORY PILLS */
+.subcategory-pills .nav-link {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  padding: 8px 16px;
+  background: #e9ecef;
+  color: #333;
+  font-size: 14px;
+  border: none;
+}
+
+.subcategory-pills .nav-link.active {
+  background: #1581BF !important;
+  color: #fff;
+}
+
+/* PRODUCT CARD */
+.product-card1 {
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card1:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.product-card1 img {
+  max-height: 170px;
+  max-width: 100%;
+  object-fit: contain;
+}

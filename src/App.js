@@ -9,8 +9,8 @@ import OurProducts from './pages/OurProducts';
 function App() {
   return (
     <React.Fragment>
-      <Header />
        <Router>
+      <Header />
       <Routes>
        <Route path="/" element={<Home />} />
        <Route path="/our-products" element = {<OurProducts />}/>

@@ -4,7 +4,7 @@ import './index.css'
 
 const AboutUs = () => {
     return (
-    <section className="py-5 about-us-section">
+    <section className="py-5 about-us-section" id='about'>
       <div className="container">
         {/* Header */}
         <div className="text-center mb-4">

@@ -4,7 +4,7 @@ import './index.css'
 
 const Footer = () => {
   return (
-    <footer className="footer-container text-dark pt-5 pb-3">
+    <footer className="footer-container text-dark pt-5 pb-3" id='contact'>
       <div className="container">
         <div className="row">
           {/* Contact Section */}
