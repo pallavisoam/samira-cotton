@@ -34,7 +34,7 @@ const Products = () => {
 
 
   return (
-    <div className="container py-5">
+    <div className="container py-5" id='products'>
 
       {/* HEADER */}
       <div className="text-center mb-5">
