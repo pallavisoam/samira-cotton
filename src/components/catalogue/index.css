@@ -1,7 +1,8 @@
 PAGE
 .catalog-page {
   background: #f8f9fb;
-  padding: 40px;
+  padding: 40px !important;
+  border: 1px solid red;
 }
 
 /* SIDEBAR */
