@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="col-md-3 mb-4">
             <h5 className="text-uppercase fw-bold mb-3 heading-dark">Contact Us</h5>
             <p className="mb-1 heading-light">
-              <strong>Phone:</strong> +997 9851423263
+              <strong>Phone:</strong> +977 9851423263
             </p>
             <p className="mb-1 heading-light">
               <strong>Email:</strong> ssiplsales01@gmail.com
