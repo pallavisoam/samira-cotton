@@ -19,7 +19,7 @@ const Footer = () => {
               <strong>Email:</strong> ssiplsales01@gmail.com
             </p>
             <p className="mb-0 heading-light">
-              <strong>WhatsApp:</strong> +997 9851423263
+              <strong>WhatsApp:</strong> +977 9851423263
             </p>
           </div>
 
