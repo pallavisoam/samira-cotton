@@ -1,15 +1,19 @@
-PAGE
+/* =========================
+   PAGE
+========================= */
+
 .catalog-page {
   background: #f8f9fb;
-  padding: 40px !important;
-  border: 1px solid red;
+  padding: 20px;
 }
 
-/* SIDEBAR */
+/* =========================
+   SIDEBAR (DESKTOP)
+========================= */
+
 .sidebar {
   position: sticky;
   top: 20px;
-  height: fit-content;
 }
 
 .sidebar-card {
@@ -31,65 +35,134 @@ PAGE
   border: none;
   padding: 12px 14px;
   font-weight: 500;
-  color: #333;
   background: transparent;
   text-align: left;
   border-radius: 8px;
   margin-bottom: 6px;
-  transition: all 0.2s ease;
-}
-
-.sidebar-item:hover {
-  background: #f1f4ff;
 }
 
 .sidebar-item.active {
-  background: #1581BF !important;
+  background: #1581BF;
   color: #fff;
 }
 
-/* CONTENT */
+/* =========================
+   CONTENT
+========================= */
+
 .content-area {
   padding-left: 24px;
 }
 
-/* SUBCATEGORY PILLS */
+/* =========================
+   DESKTOP SUBCATEGORY PILLS
+========================= */
+
 .subcategory-pills .nav-link {
   margin-right: 10px;
-  margin-bottom: 10px;
   border-radius: 50px;
   padding: 8px 16px;
   background: #e9ecef;
-  color: #333;
-  font-size: 14px;
   border: none;
 }
 
 .subcategory-pills .nav-link.active {
-  background: #1581BF !important;
+  background: #1581BF;
   color: #fff;
 }
 
-/* PRODUCT CARD */
+/* =========================
+   MOBILE TOP FILTERS
+========================= */
+
+.mobile-top-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+/* MOBILE SUBCATEGORY (PRIMARY) */
+.subcategory-scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.subcategory-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.subcategory-chip {
+  white-space: nowrap;
+  border: 1px solid #e2e6ea;
+  background: #fff;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.subcategory-chip.active {
+  background: #1581BF;
+  color: #fff;
+  border-color: #1581BF;
+  box-shadow: 0 6px 14px rgba(21,129,191,0.25);
+}
+
+/* MOBILE CATEGORY (SECONDARY) */
+.mobile-category-bar {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.mobile-category-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-category-chip {
+  white-space: nowrap;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #e9ecef;
+  font-size: 13px;
+}
+
+.mobile-category-chip.active {
+  background: #1581BF;
+  color: #fff;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
 .product-card1 {
   background: #fff;
   border-radius: 14px;
-  padding: 12px;
-  height: 220px;
+  padding: 10px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.product-card1:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 
 .product-card1 img {
-  max-height: 170px;
+  max-height: 140px;
   max-width: 100%;
   object-fit: contain;
+}
+
+/* =========================
+   MOBILE TWEAKS
+========================= */
+
+@media (max-width: 768px) {
+  .content-area {
+    padding-left: 0;
+  }
 }

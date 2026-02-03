@@ -26,11 +26,11 @@ const Products = () => {
 
   const slides = chunkArray(catalogData, 4);
 
-  const navigate = useNavigate();  
+  const navigate = useNavigate();
 
   const handleViewCatalogue = () => {
-     navigate('/our-products')
-   }
+    navigate('/our-products')
+  }
 
 
   return (
@@ -81,13 +81,14 @@ const Products = () => {
                 >
                   <div className="row g-4">
                     {group.map((item, index) => (
-                      <div className="col-md-6 col-lg-3" key={index}>
+                      <div className="col-md-6 col-lg-3 carousel-product-col" key={index}>
                         <ProductCard
                           title={item.category}
                           description={item.description}
                           image={images[slideIndex * 4 + index]}
                         />
                       </div>
+
                     ))}
                   </div>
                 </div>
@@ -101,11 +102,11 @@ const Products = () => {
         </div>
       </div>
 
-      {/* CTA */} <div className="text-center mt-5"> 
+      {/* CTA */} <div className="text-center mt-5">
         <button className="btn px-5 py-2 dark-bg-button"
-        onClick={handleViewCatalogue}
-        > View Full Catalogue </button> 
-        </div>
+          onClick={handleViewCatalogue}
+        > View Full Catalogue </button>
+      </div>
     </div>
   );
 };
