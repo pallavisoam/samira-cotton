@@ -38,8 +38,8 @@ const Products = () => {
 
       {/* HEADER */}
       <div className="text-center mb-5">
-        <h2 className="fw-bold">Our Products</h2>
-        <p className="text-muted">
+        <h2 className="fw-bold heading-dark">Our Products</h2>
+        <p className="heading-light">
           Comprehensive range of medical & healthcare solutions
         </p>
       </div>
